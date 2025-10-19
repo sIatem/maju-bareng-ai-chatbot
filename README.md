@@ -1,4 +1,6 @@
-# Yang akan kita kerjakan...
+# Gemini AI Chatbot
+
+## Yang akan dikerjakan...
 
 1. Sedia static directory
 2. Implementasi endpoint chatbot (POST /api/chat)
@@ -12,3 +14,9 @@
         - `role` tidak berupa `user` atau `model`, atau `message` tidak bertipe data `string` atau berisi string kosong (`""` atau `''`)
    - Lakukan mapping agar bisa dikirim ke Google Gemini API dengan function/method `generateContent()`
    - Message yang diterima oleh Google Gemini API nanti akan dikirimkan kembali ke user dengan format `{ success: boolean, message: string, data: string }`
+
+
+## Run project
+```language
+- bun run dev   # development mode
+- bun run start # production mode
