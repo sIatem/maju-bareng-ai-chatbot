@@ -1,0 +1,20 @@
+{
+  "name": "chatbot",
+  "module": "src/server.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun --hot src/server.ts",
+    "start": "NODE_ENV=production bun src/server.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.25.0",
+    "dotenv": "^17.2.3",
+    "preact": "^10.27.2"
+  }
+}
